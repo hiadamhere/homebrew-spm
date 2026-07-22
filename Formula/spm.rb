@@ -3,22 +3,22 @@
 class Spm < Formula
   desc "Skill and Plugin Manager — install AI-agent skills into every coding agent"
   homepage "https://github.com/hiadamhere/spm"
-  version "0.3.4"
+  version "0.3.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hiadamhere/spm/releases/download/v0.3.4/spm-0.3.4-osx-arm64.tar.gz"
-      sha256 "b786b852b5d48661d9c125f7c2b73be30a8f890c9399ded548302ee01e952c70"
+      url "https://github.com/hiadamhere/spm/releases/download/v0.3.5/spm-0.3.5-osx-arm64.tar.gz"
+      sha256 "2921387532ac96aeeac3eccc36b5fa9a535cf0173414bc7ae9b6e820868fb7d8"
     else
-      url "https://github.com/hiadamhere/spm/releases/download/v0.3.4/spm-0.3.4-osx-x64.tar.gz"
-      sha256 "6add40a3be0ab3611dde0342cc165fbbaa54981f3f45e305253f1d13c9bf3e0c"
+      url "https://github.com/hiadamhere/spm/releases/download/v0.3.5/spm-0.3.5-osx-x64.tar.gz"
+      sha256 "d6d46f7ca78a5d46d58d9e2a9b97bb86053c16394441e2e35b1d9aca359dbca3"
     end
   end
 
   on_linux do
-    url "https://github.com/hiadamhere/spm/releases/download/v0.3.4/spm-0.3.4-linux-x64.tar.gz"
-    sha256 "bf0fb1bb869d3f7ca20f045bb4564c758306d89cfdf0549a9ca9597781eaebc7"
+    url "https://github.com/hiadamhere/spm/releases/download/v0.3.5/spm-0.3.5-linux-x64.tar.gz"
+    sha256 "725b2d11a6489f8ca74db8f1102a9c8b201077fba1c52e58d9edc73fb449024a"
   end
 
   def install
