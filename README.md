@@ -18,6 +18,17 @@ brew install spm
 
 Upgrade with `brew upgrade spm`. Works on macOS (Apple Silicon + Intel) and Linux.
 
+## Team catalogs
+
+spm installs skills from **catalogs** — Git repos indexed by a `catalog.json`. Publish one for your
+team (internal repos included) and a single import subscribes every developer to the same skills:
+
+```sh
+spm catalog import https://intranet.example/catalog.json   # your team's index
+spm catalog import                                          # spm's featured index
+spm catalog sync && spm list
+```
+
 ## What's here
 
 A single formula, `Formula/spm.rb`, that downloads the self-contained `spm` binary for your platform
